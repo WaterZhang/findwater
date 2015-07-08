@@ -1,0 +1,59 @@
+.page_login{
+	text-align: center;
+}
+
+.form_login{
+	width:400px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.form_login .input {
+	background: #f9f9f9 url("../image/input-bg.png") repeat-x scroll 0 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 18px;
+    height: 48px;
+    line-height: 48px;
+}
+
+.form_login .input .icon{
+	background: rgba(0, 0, 0, 0) url("../image/dialog-input-icons-bg.png") repeat-x scroll 0 0;
+    border-radius: 10px 0 0 10px;
+    border-right: 1px solid #ccc;
+    float: left;
+    height: 48px;
+    overflow: hidden;
+    width: 48px;
+}
+
+
+.form_login  .form_user  .icon i {
+    background: rgba(0, 0, 0, 0) url("../image/dialog-input-icons.png") no-repeat scroll 0 0;
+    cursor: pointer;
+    display: block;
+    height: 48px;
+    text-indent: -9999em;
+    width: 48px;
+}
+
+.form_login  .form_pass  .icon i {
+    background: rgba(0, 0, 0, 0) url("../image/dialog-input-icons.png") no-repeat scroll 0 0;
+    background-position: -48px 0;
+    cursor: pointer;
+    display: block;
+    height: 48px;
+    text-indent: -9999em;
+    width: 48px;
+}
+
+.form_login input {
+	background: rgba(255, 255, 255, 0) none repeat scroll 0 0;
+    width: 330px;
+	font-size: 18px;
+    height: 34px;
+	border: 0 none;
+ }
+ 
+ 
+ 

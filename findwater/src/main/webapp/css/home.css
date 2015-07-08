@@ -1,0 +1,113 @@
+body {
+	margin: 0px;
+	font-family: tahoma,arial,simsun,"ËÎÌו";
+}
+
+.home_header {
+	height:80px;
+	width: 100%;
+	background:#444;
+	margin-top: 0px;
+	margin-bottom:10px;
+}
+
+.home_logo {
+	float: left;
+	color: #FFF;
+	padding-top:20px;
+	margin-left:200px;
+}
+
+.home_logo h1 {
+	margin-top: 0px;
+	margin-bottom:0px;
+}
+
+.home_logo a{
+	color: #FFF;
+	text-decoration:none;
+}
+
+.home_nav {
+	
+}
+
+.home_nav ul { 
+	list-style: none; 
+	float: left;
+}
+
+.home_nav li {
+	display: inline;
+	margin-left: 30px;
+	color:#999;
+}
+
+.home_nav ul li:first-child {
+	margin-left: 60px;
+}
+ 
+.home_nav .nav_bar {
+	padding-top: 22px;
+}
+
+.home_nav a {
+	color:#999;
+	text-decoration:none;
+}
+
+.home_nav a:hover {
+	color:#FFF;
+}
+
+.main {
+	margin-left:200px;
+	margin-right:200px;
+}
+
+#content_box {
+	width: 70%;
+	float:left;
+	padding: 10px;
+}
+
+#content_box h2{
+	margin-top:0px;
+}
+
+#right_nav {
+	width: 30%;
+	float: right;
+	padding: 10px;
+}
+
+.content {
+	padding: 10px;
+	margin-top: 20px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #FFF;
+}
+
+.content .content_text {
+	line-height: 150%;
+	color: #444;
+}
+
+.content_title {
+	margin-bottom: 10px;
+}
+
+.content_title h2 {
+	display : inline
+}
+
+.content_title .content_date {
+	float: right;
+	text-align: right;
+	display : inline;
+	padding-right: 10px;
+	margin-top:10px;
+}
+
+
