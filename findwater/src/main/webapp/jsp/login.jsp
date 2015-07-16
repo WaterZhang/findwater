@@ -5,6 +5,14 @@
 <head>
 <link rel="stylesheet" type="text/css" href="css/home.css">
 <link rel="stylesheet" type="text/css" href="css/login.css">
+<script type="text/javascript" src="script/jquery-1.11.3.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
+</script>
 </head>
 
 <body class="page_login">
@@ -23,6 +31,10 @@
 			<div class="form_submit btn"><input type="submit" value="登陆"/></div>
 		</form>
 	</div>
+	
+	<p>如果您点击我，我会消失。</p>
+	<p>点击我，我会消失。</p>
+	<p>也要点击我哦。</p>
 	
 	<c:import url="footer.jsp" />
 	
