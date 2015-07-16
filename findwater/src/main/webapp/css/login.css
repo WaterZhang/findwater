@@ -6,6 +6,7 @@
 	width:400px;
 	margin-left:auto;
 	margin-right:auto;
+	margin-top: 100px;
 }
 
 .form_login .input {
@@ -55,5 +56,18 @@
 	border: 0 none;
  }
  
+ .form_submit {
+ 	background: rgba(0, 0, 0, 0) linear-gradient(#28a0e5, #015e94) repeat scroll 0 0;
+ }
  
+ .btn {
+ 	border-radius: 9px;
+    clear: both;
+    height: 48px;
+    line-height: 48px;
+ }
+ 
+ .btn input {
+	cursor: pointer;
+ }
  

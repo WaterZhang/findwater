@@ -20,9 +20,11 @@
 				<span class="icon"><i>密码</i></span>
 				<input type="password" name="password"/>
 			</div>
-			<div class="form_submit"><input type="submit" value="登陆"/></div>
+			<div class="form_submit btn"><input type="submit" value="登陆"/></div>
 		</form>
 	</div>
+	
+	<c:import url="footer.jsp" />
 	
 </body>
 
