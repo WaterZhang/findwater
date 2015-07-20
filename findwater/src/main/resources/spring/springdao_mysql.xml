@@ -4,6 +4,7 @@
        xmlns:tx="http://www.springframework.org/schema/tx" xmlns:mvc="http://www.springframework.org/schema/mvc"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:task="http://www.springframework.org/schema/task"
+       xmlns:p="http://www.springframework.org/schema/p" 
 
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 		http://www.springframework.org/schema/beans/spring-beans.xsd
@@ -18,39 +19,22 @@
         http://www.springframework.org/schema/task 
         http://www.springframework.org/schema/task/spring-task.xsd">
       
-     <context:component-scan base-package="com.zzm.findwater.controller" />
+     <context:component-scan base-package="com.zzm.findwater.dao.mysql" />
       
        
-     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix" value="/jsp/" />
-		<property name="suffix" value=".jsp" />
-		<!--  
-		<property name="viewClass"
-			value="org.springframework.web.servlet.view.JstlView" />
-		<property name="redirectHttp10Compatible" value="false" />
-		-->
-	</bean>
-        
-        
-    <!-- config about -->    
-    <bean id="baseProperties" class="org.springframework.beans.factory.config.ListFactoryBean">  
-        <property name="sourceList">  
-      	<list>
-        	<value>classpath:config.properties</value>
-        	<value>classpath:mysql.properties</value>
-        </list>  
-        </property>  
-    </bean>
-    
-    <bean id="configurationsLoader" class="com.zzm.findwater.util.PropertyConfigLoader">
-	    <property name="locationsList">
-	        <list>
-	            <ref bean="baseProperties" />
-	        </list>
-	    </property>
-	</bean>
-    
-    <!--  -->
+     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		  p:driverClassName="${com.zzm.findwater.mysql.driver}"
+		  p:url="${com.zzm.findwater.mysql.url}"
+		  p:username="${com.zzm.findwater.mysql.user}"
+		  p:password="${com.zzm.findwater.mysql.password}"
+		  p:initialSize="2"
+		  p:maxActive="10" />
+		  
+	 <bean id ="jdbcTemplate"   
+         class = "org.springframework.jdbc.core.JdbcTemplate">   
+         <property name = "dataSource" ref="dataSource"/>   
+    </bean>  
+	 
         
  
  </beans>

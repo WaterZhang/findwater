@@ -7,7 +7,7 @@
   <display-name>find water</display-name>
   
   <welcome-file-list>
-  	<welcome-file>index.jsp</welcome-file>
+  	<welcome-file>home.html</welcome-file>
   </welcome-file-list>
   
   <servlet>
@@ -16,7 +16,7 @@
   	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
   	<init-param>
   		<param-name>contextConfigLocation</param-name>
-  		<param-value>classpath:spring/springmvc.xml</param-value>
+  		<param-value>classpath:spring/springmvc.xml,classpath:spring/springdao_mysql.xml</param-value>
   	</init-param>
   	<load-on-startup>1</load-on-startup>
   </servlet>
