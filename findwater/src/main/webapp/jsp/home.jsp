@@ -11,6 +11,10 @@
 <body class="page_home">
 	<c:import url="header.jsp" />
 	
+	<div class="login_tip"> 
+		<span><a href="login.html">登陆</a></span>
+	</div>
+	
 	<div class="main">
 		<div>
 			<div id="content_box" class="">

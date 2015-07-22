@@ -1,6 +1,6 @@
 body {
 	margin: 0px;
-	font-family: tahoma,arial,simsun,"ËÎÌå";
+	font-family: tahoma,arial,simsun,"ï¿½ï¿½ï¿½ï¿½";
 }
 
 a:hover {
@@ -12,7 +12,6 @@ a:hover {
 	width: 100%;
 	background:#444;
 	margin-top: 0px;
-	margin-bottom:10px;
 }
 .home_foot {
 	height: 30px;
@@ -141,5 +140,23 @@ a:hover {
 	padding-right: 10px;
 	margin-top:10px;
 }
+
+.login_tip {
+	height: 25px;
+}
+
+.login_tip span{
+	float: right;
+    line-height: 38px;
+    font-size: 12px;
+    line-height:25px;
+    margin-right: 200px;
+}
+
+.login_tip a {
+	text-decoration:none;
+}
+
+
 
 
